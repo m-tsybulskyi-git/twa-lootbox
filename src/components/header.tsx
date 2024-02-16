@@ -8,15 +8,16 @@ function Header() {
   const { network } = useTonConnect();
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <TonConnectButton />
-        {
-          network == null ? "" : 
-          <Typography marginLeft={"10px"}>
+    <AppBar>
+      <Toolbar style={{display: "flex", justifyContent: "flex-end" }}>
+        {network == null ? (
+          ""
+        ) : (
+          <Typography>
             {network == CHAIN.MAINNET ? "mainnet" : "testnet"}
           </Typography>
-        }
+        )}
+        <TonConnectButton style={{paddingLeft: 20}}/>
       </Toolbar>
     </AppBar>
   );
