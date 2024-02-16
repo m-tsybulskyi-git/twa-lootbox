@@ -18,7 +18,7 @@ export function useLootBoxContract() {
     let contract_address = Address.parse(
       network == CHAIN.MAINNET
         ? "non-supported"
-        : "EQDYfALh5zjhkNDDIwyRXtTtQKLVcrNs2xiprpWmDyvdIU2c"
+        : "EQBT3sMQIde-xWnAIQYiyCaRdDd19e_h6yQ7No7HNw741raf"
     );
 
     let contract = LootBoxContract.fromAddress(contract_address);
