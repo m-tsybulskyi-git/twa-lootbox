@@ -38,7 +38,9 @@ function LootBox() {
           variant="outlined"
           type="number"
           onChange={handleAmountChange}
+          sx={{ input: { color: "var(--tg-theme-text-color)" } }}
           style={{ marginRight: 10 }}
+          focused
         />
         <Button variant="contained" onClick={handlePlayButtonClick}>
           Play!
@@ -54,9 +56,9 @@ function LootBox() {
         ) : (
           ""
         )}
-        
+
         {globalStatsCache != null ? (
-          <Typography >
+          <Typography>
             Global Stats {globalStatsCache.counter.toString()}: <tr />
             biggest win - {fromNano(globalStatsCache.biggestWin)} TON <tr />
             last win - {fromNano(globalStatsCache.lastWin)} TON
