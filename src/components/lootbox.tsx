@@ -66,13 +66,13 @@ function LootBox() {
           type="number"
           onChange={handleAmountChange}
           sx={{ input: { color: "var(--tg-theme-text-color)" } }}
-          style={{ marginRight: 10, height: 50  }}
+          style={{ margin: 10, height: 50  }}
           focused
         />
         <Button
           variant="contained"
           onClick={handlePlayButtonClick}
-          style={{ marginRight: 10, height: 50  }}
+          style={{ margin: 10, height: 50  }}
         >
           Play
         </Button>
@@ -80,7 +80,7 @@ function LootBox() {
           variant="contained"
           onClick={handleTopUpBalanceButtonClick}
           disabled={!isOwnerCache}
-          style={{ marginRight: 10, height: 50  }}
+          style={{ margin: 10, height: 50  }}
         >
           Top up
         </Button>
@@ -88,7 +88,7 @@ function LootBox() {
           variant="contained"
           onClick={handleWithdrawButtonClick}
           disabled={!isOwnerCache}
-          style={{ marginRight: 10, height: 50 }}
+          style={{ margin: 10, height: 50 }}
         >
           Withdraw
         </Button>
